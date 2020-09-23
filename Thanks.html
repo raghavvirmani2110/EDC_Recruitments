@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>Thank You</title>
+    <link rel="stylesheet" type="text/css" href="css/preloader.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
     <style>
         .thank-you-message{
@@ -59,5 +60,20 @@
             </ul>
         </div>
     </div>
+    <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <script src="js/jquery.js"></script>
+        <!-- fullpage -->
+        <script src="js/jquery.fullPage.js"></script>
+        <!-- smoothScroll -->
+        <script src="js/smoothscroll.js"></script>
+        <!-- custom -->
+        <script src="js/custom.js"></script>
+    <script>
+        $(window).on("load",function(){
+            $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
 </body>
 </html>
