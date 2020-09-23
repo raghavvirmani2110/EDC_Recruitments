@@ -48,6 +48,28 @@
 
 	</style>
 
+	<style>
+
+.cardanimation:hover
+{
+
+background:linear-gradient(to left , orange, tomato);
+transition:2s;
+-webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.05);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.05);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.05);
+    transition: all 200ms ease-in;
+    transform: scale(1.05);
+box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .15);
+transition: transform 300ms cubic-bezier(0.22, 0.61, 0.36, 1);
+transition: opacity 2s cubic-bezier(.165, .84, .44, 1);
+
+}
+
+	</style>
 <style>
 	@media only screen and (max-width: 991px){
 		.disp-none{
@@ -159,7 +181,7 @@
 
 <div id="Landing" class="section" style="">
 	<div class="container" style="height: 100vh; display: flex; justify-content: center; align-items: center;">
-		<div class="row">
+		<div class="row ">
 			<div class="col-lg-6 col-md-12 col-sm-12 p-5 bg-img rounded" style="background-image: url(images/landing2.jpeg);max-width: 600px; max-height: 500px; z-index:999">
 				<div style="height: 100%; display: flex; flex-direction: column; align-items: center;">
 					<h3 style="text-align:justify; color: black;">Welcome to Entrepreneurship Development Cell of TIET. EDC is a collaborative independent body which fosters and nurtures the young Entrepreneurial dream.  EDC is "the" place in our college where sky is the limit to learn and develop interpersonal skills and technicals for a business. 
@@ -176,9 +198,9 @@
 <!--Landing page end-->
 
 <form action="server.php" method="post">
-<div id="Q1" class="section">
+<div id="Q1" class="section ">
 	<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
-		<div class="card">
+		<div class="card cardanimation">
 			<div>
 				<h2 style="color: black;">Enter your name</h2>
 				<input type="text" class="input" name="name" required>
@@ -193,7 +215,7 @@
 </div>
 <div id="Q2" class="section">
 	<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
-		<div class="card">
+		<div class="card cardanimation">
 			<div>
 				<h2 style="color: black;">E-mail ID</h2>
 				<input type="email" class="input"  name="email" required>
@@ -211,7 +233,7 @@
 </div>
 <div id="Q3" class="section">
 	<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
-		<div class="card">
+		<div class="card cardanimation">
 			<div>
 				<h2 style="color: black;">Phone Number</h2>
 				<input type="text" class="input" maxlength=10 name="phone"required>
@@ -230,7 +252,7 @@
 </div>
 <div id="Q4" class="section">
 	<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
-		<div class="card">
+		<div class="card cardanimation">
 			<div>
 				<h2 style="color: black;">Roll Number</h2>
 				<input type="text" class="input" name="roll" required>
@@ -249,7 +271,7 @@
 </div>
 <div id="Q5" class="section">
 	<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
-		<div class="card">
+		<div class="card cardanimation">
 			<div>
 				<h2 class="mb-5" style="color: black;">You are a ___________</h2>
 				<p>
@@ -280,7 +302,7 @@
 
 <div id="Q6" class="section">
 	<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
-		<div class="card">
+		<div class="card cardanimation">
 			<div>
 				<h2 style="color: black;">Why do you want to join EDC?</h2>
 				<textarea class="input" rows="5" name="join" required></textarea>
@@ -300,7 +322,7 @@
 
 <div id="Q7" class="section">
 	<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
-		<div class="card">
+		<div class="card cardanimation">
 			<div>
 				<h2 style="color: black;"> What other societies are you a part of?</h2>
 				<textarea class="input" rows="1" name="socities" required></textarea>
@@ -320,7 +342,7 @@
 
 <div id="Q8" class="section">
 	<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
-		<div class="card">
+		<div class="card cardanimation">
 			<div>
 				<h2 class="mb-5" style="color: black;">What is/are your preferred Department/s?</h2>
 				<p>
@@ -381,7 +403,7 @@
 </div>
 <div id="Q9" class="section">
 	<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
-		<div class="card">
+		<div class="card cardanimation">
 			<div>
 				<h2 style="color: black;">Any prior experience in the department that you have chosen?</h2>
 				<textarea class="input" rows="5" name="experience" required></textarea>
@@ -403,7 +425,7 @@
 
 <div id="Q10" class="section">
 	<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
-		<div class="card">
+		<div class="card cardanimation">
 			<div>
 				<h2 style="color: black;">If killing people is wrong, then why do we kill people that kill people?</h2>
 				<textarea class="input" rows="5" name="kill" required></textarea>
@@ -422,7 +444,7 @@
 </div>
 <div id="Q11" class="section">
 	<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
-		<div class="card">
+		<div class="card cardanimation">
 			<div>
 				<h2 style="color: black;">What advice would you give to your 8-year old self?</h2>
 				<textarea class="input" rows="5" name="advice" required></textarea>
@@ -438,9 +460,11 @@
 		</div>
 	</div>
 </div>
+
 <div id="Q12" class="section">
 	<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
-		<div class="card">
+		
+		<div class=" card cardanimation ">
 			<div>
 				<h2 style="color: black;">In the word "scent" is it the "s" or the "c" that is silent? And why do you think so ?</h2>
 				<textarea class="input" rows="5" name="scent" required></textarea>
@@ -451,7 +475,7 @@
 					<button type="submit" class="sub_btn btn btn-dark" name="submit" value="submit">Submit</button>
 	
 				</div>
-
+</div>
 			</div>
 		</div>
 	</div>
@@ -461,6 +485,11 @@
 
 			
 			ThankYOU PAGE -->
+
+	
+
+		
+
 
 </div>
 
