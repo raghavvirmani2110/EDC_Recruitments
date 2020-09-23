@@ -12,7 +12,7 @@
         Lavish HTML CSS Template
         https://templatemo.com/tm-458-lavish
         -->
-        
+        <link rel="stylesheet" type="text/css" href="css/preloader.css" />
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -465,6 +465,9 @@
 </div>
 
 
+	<div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+	</div>
 	
 		
 		<!-- <script src="js/current_event.js"></script> -->
@@ -476,6 +479,11 @@
 		<script src="js/smoothscroll.js"></script>
 		<!-- custom -->
 		<script src="js/custom.js"></script>
+		<script>
+		$(window).on("load",function(){
+     		$(".loader-wrapper").fadeOut("slow");
+		});
+	</script>
 
 	</body>
 </html>
