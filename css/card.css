@@ -1,12 +1,16 @@
-.card {
-  background: rgba(255,255,255,0.8);
+.card {    background: rgb(57,88,233);
+background: linear-gradient(90deg, rgba(57,88,233,1) 43%, rgba(23,158,181,1) 100%); 
+  box-shadow:10px 10px 8px #111111;
+  width:1200px;
   border-radius: 10px;
   display: inline-block;
   max-width: 800px;
   padding: 5em;
-  margin-left: 5em;
-  margin-right: 5em;
-  min-width: 800px;
+  margin-left: 7em;
+  margin-right: 3em;
+  margin-bottom: 0.1em;
+  margin-top: 6em;
+  z-index:2;
 }
 @media only screen and (max-width: 600px){
 	.card {
