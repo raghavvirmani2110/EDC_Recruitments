@@ -19,7 +19,7 @@ body.h2
 }
 body
 {
-	background: url("../images/bg1.jpeg") no-repeat;
+	/*background: url("../images/bg1.jpeg") no-repeat;*/
   background-size: cover;
 	color: #ffffff;
 	font-family: 'Raleway', sans-serif;
