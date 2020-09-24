@@ -339,7 +339,7 @@
 			z-index: -1;
 		}
 
-		.section {
+		.manik {
 			background-image: linear-gradient(to left top, #010102, #0f1217, #121e25, #112a32, #0e373b, #114143, #174c4a, #1e5751, #24635e, #2b6f6b, #317b79, #388787);
 
 		}
@@ -353,7 +353,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 </head>
 
-<body data-pinterest-extension-installed="cr1.3.4" cz-shortcut-listen="true">
+<body data-pinterest-extension-installed="cr1.3.4" cz-shortcut-listen="true" style="color: #000000;">
+
 
 	<div class="fixedlogos">
 		<img class="logo" src="images/logo.PNG">
@@ -366,6 +367,9 @@
 	<div class="fullpage">
 		<!--Landing Page-->
 
+		<div id="large-header" class="large-header" style="height: 775px; position: absolute;">
+			<canvas id="demo-canvas"></canvas>
+		</div>
 		<div id="Landing" class="section" style="">
 			<div class="container" style="height: 100vh; display: flex; justify-content: center; align-items: center;">
 				<div class="row ">
@@ -393,6 +397,9 @@
 		<!--Landing page end-->
 
 		<form action="server.php" method="post">
+			<div id="large-header" class="large-header" style="height: 10000px; position: absolute;">
+				<canvas id="demo-canvas"></canvas>
+			</div>
 			<div id="Q1" class="section ">
 				<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
 					<div class="card cardanimation">
@@ -726,7 +733,6 @@
 	<div class="loader-wrapper">
 		<span class="loader"><span class="loader-inner"></span></span>
 	</div>
-
 
 
 	<!-- <script src="js/current_event.js"></script> -->
