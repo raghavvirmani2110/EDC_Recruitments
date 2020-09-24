@@ -12,7 +12,7 @@
         Lavish HTML CSS Template
         https://templatemo.com/tm-458-lavish
         -->
-        
+        <link rel="stylesheet" type="text/css" href="css/preloader.css" />
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -48,6 +48,28 @@
 
 	</style>
 
+	<style>
+
+.cardanimation:hover
+{
+
+background:linear-gradient(to left , orange, tomato);
+transition:2s;
+-webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.05);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.05);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.05);
+    transition: all 200ms ease-in;
+    transform: scale(1.05);
+box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .15);
+transition: transform 300ms cubic-bezier(0.22, 0.61, 0.36, 1);
+transition: opacity 2s cubic-bezier(.165, .84, .44, 1);
+
+}
+
+	</style>
 <style>
 	@media only screen and (max-width: 991px){
 		.disp-none{
@@ -143,8 +165,18 @@
 			padding-bottom: 15px !important;
 		}
 	</style>
-	</head>
-	<body>
+	<style type="text/css">
+		h2 {
+			font-size: 40px !important;
+		}
+	</style>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
+<body>
 
 	<div class="fixedlogos" >
 		<img class="logo" src="images/logo.PNG">
@@ -159,7 +191,7 @@
 
 <div id="Landing" class="section" style="">
 	<div class="container" style="height: 100vh; display: flex; justify-content: center; align-items: center;">
-		<div class="row">
+		<div class="row ">
 			<div class="col-lg-6 col-md-12 col-sm-12 p-5 bg-img rounded" style="background-image: url(images/landing2.jpeg);max-width: 600px; max-height: 500px; z-index:999">
 				<div style="height: 100%; display: flex; flex-direction: column; align-items: center;">
 					<h3 style="text-align:justify; color: black;">Welcome to Entrepreneurship Development Cell of TIET. EDC is a collaborative independent body which fosters and nurtures the young Entrepreneurial dream.  EDC is "the" place in our college where sky is the limit to learn and develop interpersonal skills and technicals for a business. 
@@ -176,11 +208,12 @@
 <!--Landing page end-->
 
 <form action="server.php" method="post">
-<div id="Q1" class="section">
+<div id="Q1" class="section ">
 	<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
-		<div class="card">
+		<div class="card cardanimation">
 			<div>
 				<h2 style="color: black;">Enter your name</h2>
+				<br>
 				<input type="text" class="input" name="name" required>
 				<div class="button_manage">
 					<a href="#Q2">
@@ -193,9 +226,10 @@
 </div>
 <div id="Q2" class="section">
 	<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
-		<div class="card">
+		<div class="card cardanimation">
 			<div>
 				<h2 style="color: black;">E-mail ID</h2>
+				<br>
 				<input type="email" class="input"  name="email" required>
 				<div class="button_manage">
 					<a href="#Q1">
@@ -211,9 +245,10 @@
 </div>
 <div id="Q3" class="section">
 	<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
-		<div class="card">
+		<div class="card cardanimation">
 			<div>
 				<h2 style="color: black;">Phone Number</h2>
+				<br>
 				<input type="text" class="input" maxlength=10 name="phone"required>
 				<div class="button_manage">
 					<a href="#Q2">
@@ -230,9 +265,10 @@
 </div>
 <div id="Q4" class="section">
 	<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
-		<div class="card">
+		<div class="card cardanimation">
 			<div>
 				<h2 style="color: black;">Roll Number</h2>
+				<br>
 				<input type="text" class="input" name="roll" required>
 				<div class="button_manage">
 					<a href="#Q3">
@@ -249,21 +285,25 @@
 </div>
 <div id="Q5" class="section">
 	<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
-		<div class="card">
+		<div class="card cardanimation">
 			<div>
 				<h2 class="mb-5" style="color: black;">You are a ___________</h2>
-				<p>
-					<label>
-					  <input class="with-gap" name="live" type="radio" value="day scholar " required/>
-					  <span style="color: #000000;">Day Scholar</span>
-					</label>
-				</p>
-				<p>
-					<label>
-					  <input class="with-gap" name="live" type="radio" value="hostler" required />
-					  <span style="color: #000000;">Hosteller</span>
-					</label>
-				</p>
+				<div class="buttons">
+					<ul>
+					  <li>
+					    <input type="radio" id="f-option" name="selector">
+					    <label for="f-option">Hostler</label>
+					    
+					    <div class="check"></div>
+					  </li>
+					  <li>
+					    <input type="radio" id="s-option" name="selector">
+					    <label for="s-option">Day Scholor</label>
+					    
+					    <div class="check"><div class="inside"></div></div>
+					  </li>
+					</ul>
+				</div>
 				<div class="button_manage">
 					<a href="#Q4">
 						<button type="button" class="btn btn-dark mt-6 mb-6"><img style="width:32px; height:32px;" src="images/back.png"></button>
@@ -280,7 +320,7 @@
 
 <div id="Q6" class="section">
 	<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
-		<div class="card">
+		<div class="card cardanimation">
 			<div>
 				<h2 style="color: black;">Why do you want to join EDC?</h2>
 				<textarea class="input" rows="5" name="join" required></textarea>
@@ -300,9 +340,9 @@
 
 <div id="Q7" class="section">
 	<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
-		<div class="card">
+		<div class="card cardanimation">
 			<div>
-				<h2 style="color: black;"> What other societies are you a part of?</h2>
+				<h2 style="color: black; font-size: 16"> What other societies are you a part of?</h2>
 				<textarea class="input" rows="1" name="socities" required></textarea>
 				<div class="button_manage">
 					<a href="#Q6">
@@ -320,52 +360,55 @@
 
 <div id="Q8" class="section">
 	<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
-		<div class="card">
+		<div class="card cardanimation">
 			<div>
 				<h2 class="mb-5" style="color: black;">What is/are your preferred Department/s?</h2>
-				<p>
-					<label>
-					  <input class="with-gap" name="department[]" value="Web Developer" type="checkbox"  />
-					  <span style="color: #000000;">Web Development</span>
-					</label>
-				</p>
-				<p>
-					<label>
-					  <input class="with-gap" name="department[]" value="Marketers" type="checkbox" />
-					  <span style="color: #000000;">Marketing</span>
-					</label>
-				</p>
-				<p>
-					<label>
-					  <input class="with-gap" name="department[]" value="Video Editor" type="checkbox" />
-					  <span style="color: #000000;">Video Editing</span>
-					</label>
-				</p>
-				<p>
-					<label>
-					  <input class="with-gap" name="department[]" value="Graphic Designerr" type="checkbox" />
-					  <span style="color: #000000;">Graphic Designing</span>
-					</label>
-				</p>
-				<p>
-					<label>
-					  <input class="with-gap" name="department[]" value="Event Manager" type="checkbox" />
-					  <span style="color: #000000;">Event Management</span>
-					</label>
-				</p>
-				<p>
-					<label>
-					  <input class="with-gap" name="department[]" value="Content" type="checkbox" />
-					  <span style="color: #000000;">Content Writing</span>
-					</label>
-				</p>
-				<p>
-					<label>
-					  <input class="with-gap" name="department[]" value="Externalsr" type="checkbox"/>
-					  <span style="color: #000000;">Externals</span>
-					</label>
-				</p>
-				  
+				<div class="">
+					<ul class="list">
+					    <li class="list__item">
+					      <div class="label--checkbox">
+					          <input type="checkbox" class="" id="t-dept">
+					            <label for="t-dept">Web Development</label>
+					      </div>
+					    </li>
+					    <li class="list__item">
+					      <label class="label--checkbox">
+					          <input type="checkbox" class="" id="m-dept">
+					            <label for="m-dept">Marketing</label>
+					      </label>
+					    </li>
+					    <li class="list__item">
+					      <label class="label--checkbox">
+					          <input type="checkbox" class="" id="v-dept">
+					            <label for="v-dept">Video Editing</label>
+					      </label>
+					    </li>
+					    <li class="list__item">
+					      <label class="label--checkbox">
+					          <input type="checkbox" class="" id="g-dept">
+					            <label for="g-dept">Graphic Designing</label>
+					      </label>
+					    </li>
+					    <li class="list__item">
+					      <label class="label--checkbox">
+					          <input type="checkbox" class="" id="e-dept">
+					            <label for="e-dept">Event Management</label>
+					      </label>
+					    </li>
+					    <li class="list__item">
+					      <label class="label--checkbox">
+					          <input type="checkbox" class="" id="c-dept">
+					            <label for="c-dept">Content Writing</label>
+					      </label>
+					    </li>
+					    <li class="list__item">
+					      <label class="label--checkbox">
+					          <input type="checkbox" class="" id="ex-dept">
+					            <label for="ex-dept">Externals</label>
+					      </label>
+					    </li>
+					</ul>
+				</div>  
 			<div class="button_manage">
 				<a href="#Q7">
 					<button type="button" class="btn btn-dark mt-2 mb-2"><img style="width:32px; height:32px;" src="images/back.png"></button>
@@ -381,7 +424,7 @@
 </div>
 <div id="Q9" class="section">
 	<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
-		<div class="card">
+		<div class="card cardanimation">
 			<div>
 				<h2 style="color: black;">Any prior experience in the department that you have chosen?</h2>
 				<textarea class="input" rows="5" name="experience" required></textarea>
@@ -403,7 +446,7 @@
 
 <div id="Q10" class="section">
 	<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
-		<div class="card">
+		<div class="card cardanimation">
 			<div>
 				<h2 style="color: black;">If killing people is wrong, then why do we kill people that kill people?</h2>
 				<textarea class="input" rows="5" name="kill" required></textarea>
@@ -422,7 +465,7 @@
 </div>
 <div id="Q11" class="section">
 	<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
-		<div class="card">
+		<div class="card cardanimation">
 			<div>
 				<h2 style="color: black;">What advice would you give to your 8-year old self?</h2>
 				<textarea class="input" rows="5" name="advice" required></textarea>
@@ -438,9 +481,11 @@
 		</div>
 	</div>
 </div>
+
 <div id="Q12" class="section">
 	<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
-		<div class="card">
+		
+		<div class=" card cardanimation ">
 			<div>
 				<h2 style="color: black;">In the word "scent" is it the "s" or the "c" that is silent? And why do you think so ?</h2>
 				<textarea class="input" rows="5" name="scent" required></textarea>
@@ -451,7 +496,7 @@
 					<button type="submit" class="sub_btn btn btn-dark" name="submit" value="submit">Submit</button>
 	
 				</div>
-
+</div>
 			</div>
 		</div>
 	</div>
@@ -462,9 +507,17 @@
 			
 			ThankYOU PAGE -->
 
+	
+
+		
+
+
 </div>
 
 
+	<div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+	</div>
 	
 		
 		<!-- <script src="js/current_event.js"></script> -->
@@ -476,6 +529,11 @@
 		<script src="js/smoothscroll.js"></script>
 		<!-- custom -->
 		<script src="js/custom.js"></script>
+		<script>
+		$(window).on("load",function(){
+     		$(".loader-wrapper").fadeOut("slow");
+		});
+	</script>
 
 	</body>
 </html>
