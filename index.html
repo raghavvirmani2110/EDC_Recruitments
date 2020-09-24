@@ -338,6 +338,14 @@
 			height: 100%;
 			width: 100%;
 		}
+		li{
+			color:white;
+			list-style-type: none;
+		}
+		.department:hover{
+			color: yellow !important;
+		}
+		
 	</style>
 	
 		type="text/javascript"></script>
@@ -394,7 +402,7 @@
 				<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
 					<div class="card cardanimation">
 						<div>
-							<h2 style="color: black;">Enter your name</h2>
+							<h2 style="color: white;">Enter your name</h2>
 							<input type="text" class="input" name="name" required>
 							<div class="button_manage">
 								<a class="btn btn-primary more" href="#Q2">
@@ -410,7 +418,7 @@
 				<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
 					<div class="card cardanimation">
 						<div>
-							<h2 style="color: black;">E-mail ID</h2>
+							<h2 style="color: white;">E-mail ID</h2>
 							<input type="email" class="input" name="email" required>
 							<div class="button_manage">
 								<a class="btn btn-primary more" href="#Q1">
@@ -432,7 +440,7 @@
 				<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
 					<div class="card cardanimation">
 						<div>
-							<h2 style="color: black;">Phone Number</h2>
+							<h2 style="color: white;">Phone Number</h2>
 							<input type="text" class="input" maxlength=10 name="phone" required>
 							<div class="button_manage">
 								<a class="btn btn-primary more" href="#Q2">
@@ -455,7 +463,7 @@
 				<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
 					<div class="card cardanimation">
 						<div>
-							<h2 style="color: black;">Roll Number</h2>
+							<h2 style="color: white;">Roll Number</h2>
 							<input type="text" class="input" name="roll" required>
 							<div class="button_manage">
 								<a class="btn btn-primary more" href="#Q3">
@@ -476,32 +484,19 @@
 				<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
 					<div class="card cardanimation">
 						<div>
-							<h2 class="mb-5" style="color: black;">You are a ___________</h2>
-							<div class="buttons">
-								<ul>
-								  <li>
-								    <input type="radio" id="f-option" name="selector">
-								    <label for="f-option">Pizza</label>
-								    
-								    <div class="check"></div>
-								  </li>
-								  
-								  <li>
-								    <input type="radio" id="s-option" name="selector">
-								    <label for="s-option">Bacon</label>
-								    
-								    <div class="check"><div class="inside"></div></div>
-								  </li>
-								  
-								  <li>
-								    <input type="radio" id="t-option" name="selector">
-								    <label for="t-option">Cats</label>
-								    
-								    <div class="check"><div class="inside"></div></div>
-								  </li>
-								</ul>
-							</div>	
-
+							<h2 class="mb-5" style="color: white;">You are a ___________</h2>
+							<p>
+								<label>
+									<input class="with-gap" name="live" type="radio" value="day scholar " required />
+									<span style="color: #ffffff;">Day Scholar</span>
+								</label>
+							</p>
+							<p>
+								<label>
+									<input class="with-gap" name="live" type="radio" value="hostler" required />
+									<span style="color: #ffffff;">Hosteller</span>
+								</label>
+							</p>
 							<div class="button_manage">
 								<a class="btn btn-primary more" href="#Q4">
 									<div>Prev</div>
@@ -545,7 +540,7 @@
 					<div class="card cardanimation">
 						<div>
 
-							<h2 style="color: black; font-size: 16"> What other societies are
+							<h2 style="color: white; font-size: 16"> What other societies are
 								you a part of?</h2>
 							<textarea class="input" rows="1" name="socities" required></textarea>
 							<div class="button_manage">
@@ -569,50 +564,50 @@
 					<div class="card cardanimation">
 						<div>
 
-							<h2 class="mb-5" style="color: black;">What is/are your preferred
+							<h2 class="mb-5" style="color: white;">What is/are your preferred
 								Department/s?</h2>
 							<div class="">
 								<ul class="list">
 									<li class="list__item">
 										<div class="label--checkbox">
 											<input type="checkbox" class="" id="t-dept">
-											<label for="t-dept">Web Development</label>
+											<label for="t-dept" style="color:white" class="department">Web Development</label>
 										</div>
 									</li>
 									<li class="list__item">
 										<label class="label--checkbox">
 											<input type="checkbox" class="" id="m-dept">
-											<label for="m-dept">Marketing</label>
+											<label for="m-dept" style="color:white" class="department">Marketing</label>
 										</label>
 									</li>
 									<li class="list__item">
 										<label class="label--checkbox">
 											<input type="checkbox" class="" id="v-dept">
-											<label for="v-dept">Video Editing</label>
+											<label for="v-dept" style="color:white" class="department">Video Editing</label>
 										</label>
 									</li>
 									<li class="list__item">
 										<label class="label--checkbox">
 											<input type="checkbox" class="" id="g-dept">
-											<label for="g-dept">Graphic Designing</label>
+											<label for="g-dept" style="color:white" class="department">Graphic Designing</label>
 										</label>
 									</li>
 									<li class="list__item">
 										<label class="label--checkbox">
 											<input type="checkbox" class="" id="e-dept">
-											<label for="e-dept">Event Management</label>
+											<label for="e-dept" style="color:white" class="department">Event Management</label>
 										</label>
 									</li>
 									<li class="list__item">
 										<label class="label--checkbox">
 											<input type="checkbox" class="" id="c-dept">
-											<label for="c-dept">Content Writing</label>
+											<label for="c-dept" style="color:white" class="department">Content Writing</label>
 										</label>
 									</li>
 									<li class="list__item">
 										<label class="label--checkbox">
 											<input type="checkbox" class="" id="ex-dept">
-											<label for="ex-dept">Externals</label>
+											<label for="ex-dept" style="color:white" class="department">Externals</label>
 										</label>
 									</li>
 								</ul>
