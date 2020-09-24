@@ -34,6 +34,7 @@
 	
 	<link type="text/css" href="css/landingbg.css">
 	<link rel="stylesheet" href="css/templatemo-style.css">
+	<script id="_adpacks_projs" type="text/javascript" src="//cdn.buysellads.com/ac/pro.js"></script>
 
 
 	<style type="text/css">
@@ -329,9 +330,13 @@
 			z-index: -1;
 		}
 
-		.manik {
+		.bg {
 			background-image: linear-gradient(to left top, #010102, #0f1217, #121e25, #112a32, #0e373b, #114143, #174c4a, #1e5751, #24635e, #2b6f6b, #317b79, #388787);
 
+		}
+		.section {
+			height: 100%;
+			width: 100%;
 		}
 	</style>
 	
@@ -358,8 +363,6 @@
 		</center>
 	</div>
 	<div class="fullpage">
-		
-
 		<div id="Landing" class="section">
 			<div class="container" style="height: 100vh; display: flex; justify-content: center; align-items: center;">
 				<div class="row ">
@@ -474,18 +477,31 @@
 					<div class="card cardanimation">
 						<div>
 							<h2 class="mb-5" style="color: black;">You are a ___________</h2>
-							<p>
-								<label>
-									<input class="with-gap" name="live" type="radio" value="day scholar " required />
-									<span style="color: #000000;">Day Scholar</span>
-								</label>
-							</p>
-							<p>
-								<label>
-									<input class="with-gap" name="live" type="radio" value="hostler" required />
-									<span style="color: #000000;">Hosteller</span>
-								</label>
-							</p>
+							<div class="buttons">
+								<ul>
+								  <li>
+								    <input type="radio" id="f-option" name="selector">
+								    <label for="f-option">Pizza</label>
+								    
+								    <div class="check"></div>
+								  </li>
+								  
+								  <li>
+								    <input type="radio" id="s-option" name="selector">
+								    <label for="s-option">Bacon</label>
+								    
+								    <div class="check"><div class="inside"></div></div>
+								  </li>
+								  
+								  <li>
+								    <input type="radio" id="t-option" name="selector">
+								    <label for="t-option">Cats</label>
+								    
+								    <div class="check"><div class="inside"></div></div>
+								  </li>
+								</ul>
+							</div>	
+
 							<div class="button_manage">
 								<a class="btn btn-primary more" href="#Q4">
 									<div>Prev</div>
