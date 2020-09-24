@@ -16,7 +16,11 @@
         -->
 	<link rel="stylesheet" type="text/css" href="css/preloader.css" />
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" type="text/css" href="https://tympanus.net/codrops/adpacks/demoadpacks.css?1411519815227">
+
+	
+
+	<!-- <link rel="stylesheet" type="text/css" href="https://tympanus.net/codrops/adpacks/demoadpacks.css?1411519815227"> -->
+
 
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -38,11 +42,17 @@
 	<!-- custom -->
 	<link type="text/css" href="css/landingbg.css">
 	<link rel="stylesheet" href="css/templatemo-style.css">
+<<<<<<< HEAD
 	<script id="_adpacks_projs" type="text/javascript" src="//cdn.buysellads.com/ac/pro.js"></script>
-	<script type="text/javascript" id="_bsaPRO_js"
+=======
+
+	<!--<script id="_adpacks_projs" type="text/javascript" src="//cdn.buysellads.com/ac/pro.js"></script>
+	<!--<script type="text/javascript" id="_bsaPRO_js"
+
 		src="//srv.buysellads.com/ads/get/ids/C6SI42Y/?r=1411516800000&amp;segment_C6SI42Y=placement:tympanusnet&amp;freqcap=8367,3,3"
-		async="async"></script>
+		async="async"></script>-->
 	<script type="text/javascript" async="" src="//adn.fusionads.net/launchbit/10790/null/?141151982"></script>
+>>>>>>> f3f179040d6d25c42d9a134461c8c3b12090621b
 
 	<style type="text/css">
 		@charset "UTF-8";
@@ -87,23 +97,35 @@
 	</style>
 
 	<style>
+
+	.cardanimation
+{
+    -webkit-transition: all 300ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 300ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 300ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 300ms ease-in;
+    transform: scale(1);   
+}
 		.cardanimation:hover {
-
-			background: linear-gradient(to left, orange, tomato);
-			transition: 2s;
-			-webkit-transition: all 200ms ease-in;
-			-webkit-transform: scale(1.05);
-			-ms-transition: all 200ms ease-in;
-			-ms-transform: scale(1.05);
-			-moz-transition: all 200ms ease-in;
-			-moz-transform: scale(1.05);
-			transition: all 200ms ease-in;
-			transform: scale(1.05);
-			box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .15);
-			transition: transform 300ms cubic-bezier(0.22, 0.61, 0.36, 1);
-			transition: opacity 2s cubic-bezier(.165, .84, .44, 1);
-
-		}
+    background: linear-gradient(to left, rgb(108, 193, 233) 50%, rgb(52, 87, 245) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    transition: all 1s ease-in;
+	box-shadow: 0px 0px 150px #000000;
+    z-index: 2;
+    -webkit-transition: all 300ms ease-in-out;
+    -webkit-transform: scale(1.05);
+    -ms-transition: all 300ms ease-in-out;
+    -ms-transform: scale(1.05);   
+    -moz-transition: all 300ms ease-in-out;
+    -moz-transform: scale(1.05);
+    transition: all 300ms ease-in-out;
+    transform: scale(1.05);
+}
 	</style>
 	<style>
 		@media only screen and (max-width: 991px) {
@@ -339,21 +361,33 @@
 			z-index: -1;
 		}
 
-		.section {
+		.bg {
 			background-image: linear-gradient(to left top, #010102, #0f1217, #121e25, #112a32, #0e373b, #114143, #174c4a, #1e5751, #24635e, #2b6f6b, #317b79, #388787);
 
 		}
+		.section {
+			height: 100%;
+			width: 100%;
+		}
 	</style>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" -->
 		type="text/javascript"></script>
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> -->
 	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css'>
 	<link rel="stylesheet" href="./style.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script> -->
 </head>
 
-<body data-pinterest-extension-installed="cr1.3.4" cz-shortcut-listen="true">
+<<<<<<< HEAD
+<body class="" style="background: black;"  data-pinterest-extension-installed="cr1.3.4" cz-shortcut-listen="true">
+=======
+<body data-pinterest-extension-installed="cr1.3.4" cz-shortcut-listen="true" style="color: #000000;">
+
+	<div id="large-header" class="large-header" style="position: absolute;">
+		<canvas id="demo-canvas"></canvas>
+	</div>
+>>>>>>> f3f179040d6d25c42d9a134461c8c3b12090621b
 
 	<div class="fixedlogos">
 		<img class="logo" src="images/logo.PNG">
@@ -366,7 +400,11 @@
 	<div class="fullpage">
 		<!--Landing Page-->
 
-		<div id="Landing" class="section" style="">
+<<<<<<< HEAD
+		<div id="Landing" class="section" style="background: rgba(0,0,0,0);">
+=======
+		<div id="Landing" class="section">
+>>>>>>> f3f179040d6d25c42d9a134461c8c3b12090621b
 			<div class="container" style="height: 100vh; display: flex; justify-content: center; align-items: center;">
 				<div class="row ">
 					<div class="col-lg-6 col-md-12 col-sm-12 p-5 bg-img rounded"
@@ -480,18 +518,31 @@
 					<div class="card cardanimation">
 						<div>
 							<h2 class="mb-5" style="color: black;">You are a ___________</h2>
-							<p>
-								<label>
-									<input class="with-gap" name="live" type="radio" value="day scholar " required />
-									<span style="color: #000000;">Day Scholar</span>
-								</label>
-							</p>
-							<p>
-								<label>
-									<input class="with-gap" name="live" type="radio" value="hostler" required />
-									<span style="color: #000000;">Hosteller</span>
-								</label>
-							</p>
+							<div class="buttons">
+								<ul>
+								  <li>
+								    <input type="radio" id="f-option" name="selector">
+								    <label for="f-option">Pizza</label>
+								    
+								    <div class="check"></div>
+								  </li>
+								  
+								  <li>
+								    <input type="radio" id="s-option" name="selector">
+								    <label for="s-option">Bacon</label>
+								    
+								    <div class="check"><div class="inside"></div></div>
+								  </li>
+								  
+								  <li>
+								    <input type="radio" id="t-option" name="selector">
+								    <label for="t-option">Cats</label>
+								    
+								    <div class="check"><div class="inside"></div></div>
+								  </li>
+								</ul>
+							</div>	
+
 							<div class="button_manage">
 								<a class="btn btn-primary more" href="#Q4">
 									<div>Prev</div>
@@ -510,7 +561,7 @@
 
 			<div id="Q6" class="section">
 				<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
-					<div class="card">
+					<div class="card cardanimation">
 						<div>
 							<h2 class="textStyle">Why do you want to join EDC?</h2>
 							<textarea class="input" rows="5" name="join" required></textarea>
@@ -624,7 +675,7 @@
 			</div>
 			<div id="Q9" class="section">
 				<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
-					<div class="card">
+					<div class="card cardanimation">
 						<div>
 							<h2 class="textStyle">Any prior experience in the department
 								that you have chosen?</h2>
@@ -646,7 +697,7 @@
 
 			<div id="Q10" class="section">
 				<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
-					<div class="card">
+					<div class="card cardanimation">
 						<div>
 							<h2 class="textStyle">If killing
 								people is wrong, then why do
@@ -671,7 +722,7 @@
 
 			<div id="Q11" class="section">
 				<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
-					<div class="card">
+					<div class="card cardanimation">
 						<div>
 							<h2 class="textStyle">What advice would
 								you give to your 8-year old self?
@@ -693,7 +744,7 @@
 			</div>
 			<div id="Q12" class="section">
 				<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
-					<div class="card">
+					<div class="card cardanimation">
 						<div>
 							<h2 class="textStyle">In the word
 								"scent" is it the "s" or the "c"
@@ -726,7 +777,6 @@
 	<div class="loader-wrapper">
 		<span class="loader"><span class="loader-inner"></span></span>
 	</div>
-
 
 
 	<!-- <script src="js/current_event.js"></script> -->

@@ -4,7 +4,7 @@ background: linear-gradient(90deg, rgba(57,88,233,1) 43%, rgba(23,158,181,1) 100
   width:1200px;
   border-radius: 10px;
   display: inline-block;
-  max-width: 800px;
+  /*max-width: 800px;*/
   padding: 5em;
   margin-left: 7em;
   margin-right: 3em;
@@ -12,7 +12,14 @@ background: linear-gradient(90deg, rgba(57,88,233,1) 43%, rgba(23,158,181,1) 100
   margin-top: 6em;
   z-index:2;
 }
-@media only screen and (max-width: 600px){
+
+/*@media only screen and (max-width: 1000px) {
+  .card {
+    min-width: 10px;
+  }
+}
+*/
+/*@media only screen and (max-width: 600px){
 	.card {
 		padding: 1em;
 		margin-left: 2.3em;
@@ -22,7 +29,7 @@ background: linear-gradient(90deg, rgba(57,88,233,1) 43%, rgba(23,158,181,1) 100
 		font-size: 1.2em;
 	}
 }
-
+*/
 .input {
 	outline: none !important;
 	background: rgba(255,255,255,0);

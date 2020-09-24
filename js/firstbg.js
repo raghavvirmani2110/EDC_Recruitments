@@ -55,8 +55,12 @@ var _gsScope="undefined"!=typeof module&&module.exports&&"undefined"!=typeof glo
     addListeners();
 
     function initHeader() {
+        var body = document.body, html = document.documentElement;
+
+        height = Math.max( body.scrollHeight, body.offsetHeight, 
+                       html.clientHeight, html.scrollHeight, html.offsetHeight );
+        console.log(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight)
         width = window.innerWidth;
-        height = window.innerHeight;
         target = {x: width/2, y: height/2};
 
         largeHeader = document.getElementById('large-header');
@@ -65,6 +69,8 @@ var _gsScope="undefined"!=typeof module&&module.exports&&"undefined"!=typeof glo
         canvas = document.getElementById('demo-canvas');
         canvas.width = width;
         canvas.height = height;
+        console.log(height);
+        console.log(largeHeader.style.height);
         ctx = canvas.getContext('2d');
 
         // create points
@@ -121,7 +127,7 @@ var _gsScope="undefined"!=typeof module&&module.exports&&"undefined"!=typeof glo
             window.addEventListener('mousemove', mouseMove);
         }
         window.addEventListener('scroll', scrollCheck);
-        window.addEventListener('resize', resize);
+        // window.addEventListener('resize', resize);
     }
 
     function mouseMove(e) {
@@ -143,13 +149,13 @@ var _gsScope="undefined"!=typeof module&&module.exports&&"undefined"!=typeof glo
         else animateHeader = true;
     }
 
-    function resize() {
-        width = window.innerWidth;
-        height = window.innerHeight;
-        largeHeader.style.height = height+'px';
-        canvas.width = width;
-        canvas.height = height;
-    }
+    // function resize() {
+    //     width = window.innerWidth;
+    //     height = window.innerHeight;
+    //     // largeHeader.style.height = height+'px';
+    //     // canvas.width = width;
+    //     canvas.height = height;
+    // }
 
     // animation
     function initAnimation() {
