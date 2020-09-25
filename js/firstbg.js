@@ -59,7 +59,6 @@ var _gsScope="undefined"!=typeof module&&module.exports&&"undefined"!=typeof glo
 
         height = Math.max( body.scrollHeight, body.offsetHeight, 
                        html.clientHeight, html.scrollHeight, html.offsetHeight );
-        console.log(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight)
         width = window.innerWidth;
         target = {x: width/2, y: height/2};
 
@@ -69,8 +68,6 @@ var _gsScope="undefined"!=typeof module&&module.exports&&"undefined"!=typeof glo
         canvas = document.getElementById('demo-canvas');
         canvas.width = width;
         canvas.height = height;
-        console.log(height);
-        console.log(largeHeader.style.height);
         ctx = canvas.getContext('2d');
 
         // create points
