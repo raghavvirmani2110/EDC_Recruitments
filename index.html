@@ -418,7 +418,12 @@
 	<script src="js/firstbg.js"></script>
 	<script src="js/jquery.fullPage.js"></script>	
 	<script src="js/custom.js"></script>
-
+	<script>
+		input.onfocus = function() {
+			this.blur();
+			this.focus();
+		}
+	</script>
 </body>
 
 </html>
