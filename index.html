@@ -335,14 +335,19 @@
 
 		}
 		.section {
-			height: 100%;
-			width: 100%;
+			height: 100vh;
+			width: 100vw;
+		}
 		li{
 			color:white;
+			list-style-type: none;
 		}
+		.department:hover{
+			color: yellow !important;
+		}
+		
 	</style>
 	
-		type="text/javascript"></script>
 
 	
 	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css'>
@@ -350,7 +355,7 @@
 	
 </head>
 
-<body data-pinterest-extension-installed="cr1.3.4" cz-shortcut-listen="true" style="color: #000000;">
+<body data-pinterest-extension-installed="cr1.3.4" cz-shortcut-listen="true" style="background-color: #000000;">
 
 	<div id="large-header" class="large-header" style="position: absolute;">
 		<canvas id="demo-canvas"></canvas>
@@ -365,6 +370,7 @@
 		</center>
 	</div>
 	<div class="fullpage">
+	<center>			
 		<div id="Landing" class="section">
 			<div class="container" style="height: 100vh; display: flex; justify-content: center; align-items: center;">
 				<div class="row ">
@@ -557,51 +563,50 @@
 				<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
 					<div class="card cardanimation">
 						<div>
-
-							<h2 class="mb-5" style="color: white;">What is/are your preferred
+							<h2 class="mb-5" style="color: black; margin: 7px !important;">What is/are your preferred
 								Department/s?</h2>
 							<div class="">
 								<ul class="list">
 									<li class="list__item">
 										<div class="label--checkbox">
 											<input type="checkbox" class="" id="t-dept">
-											<label for="t-dept" style="color:white">Web Development</label>
+											<label for="t-dept" style="color:white" class="department">Web Development</label>
 										</div>
 									</li>
 									<li class="list__item">
 										<label class="label--checkbox">
 											<input type="checkbox" class="" id="m-dept">
-											<label for="m-dept" style="color:white">Marketing</label>
+											<label for="m-dept" style="color:white" class="department">Marketing</label>
 										</label>
 									</li>
 									<li class="list__item">
 										<label class="label--checkbox">
 											<input type="checkbox" class="" id="v-dept">
-											<label for="v-dept" style="color:white">Video Editing</label>
+											<label for="v-dept" style="color:white" class="department">Video Editing</label>
 										</label>
 									</li>
 									<li class="list__item">
 										<label class="label--checkbox">
 											<input type="checkbox" class="" id="g-dept">
-											<label for="g-dept" style="color:white">Graphic Designing</label>
+											<label for="g-dept" style="color:white" class="department">Graphic Designing</label>
 										</label>
 									</li>
 									<li class="list__item">
 										<label class="label--checkbox">
 											<input type="checkbox" class="" id="e-dept">
-											<label for="e-dept" style="color:white">Event Management</label>
+											<label for="e-dept" style="color:white" class="department">Event Management</label>
 										</label>
 									</li>
 									<li class="list__item">
 										<label class="label--checkbox">
 											<input type="checkbox" class="" id="c-dept">
-											<label for="c-dept" style="color:white">Content Writing</label>
+											<label for="c-dept" style="color:white" class="department">Content Writing</label>
 										</label>
 									</li>
 									<li class="list__item">
 										<label class="label--checkbox">
 											<input type="checkbox" class="" id="ex-dept">
-											<label for="ex-dept" style="color:white">Externals</label>
+											<label for="ex-dept" style="color:white" class="department">Externals</label>
 										</label>
 									</li>
 								</ul>
@@ -716,7 +721,7 @@
 		</form>
 		
 
-
+</center>
 	</div>
 
 
@@ -728,7 +733,6 @@
 	
 	<script src="js/jquery.js"></script>
 	<script src="js/firstbg.js"></script>
->
 	<script src="js/jquery.fullPage.js"></script>
 	
 	<script src="js/smoothscroll.js"></script>
