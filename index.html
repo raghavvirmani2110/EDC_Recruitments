@@ -144,7 +144,7 @@
 					<div class="card cardanimation">
 						<div>
 							<h2 style="color: white;">Phone Number</h2>
-							<input type="text" class="input" maxlength=10 name="phone" required>
+							<input type="text" class="input" maxlength=10 name="phone" pattern="[0-9]*" required>
 							<div class="button_manage">
 								<a class="btn btn-primary more" href="#Q2">
 									<div>Prev</div>
@@ -167,7 +167,7 @@
 					<div class="card cardanimation">
 						<div>
 							<h2 style="color: white;">Roll Number</h2>
-							<input type="text" class="input" name="roll" required>
+							<input type="text" class="input" name="roll" pattern="[0-9]*" required>
 							<div class="button_manage">
 								<a class="btn btn-primary more" href="#Q3">
 									<div>Prev</div>
@@ -431,12 +431,7 @@
 	<script src="js/firstbg.js"></script>
 	<script src="js/jquery.fullPage.js"></script>	
 	<script src="js/custom.js"></script>
-	<script>
-		input.onfocus = function() {
-			this.blur();
-			this.focus();
-		}
-	</script>
+
 </body>
 
 </html>
