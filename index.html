@@ -21,11 +21,22 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
 	
 	<link rel="stylesheet" href="css/jquery.fullPage.css">
-	<link type="text/css" href="css/landingbg.css">
 	<link rel="stylesheet" href="css/templatemo-style.css">
 	
 	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css'>
 	<link rel="stylesheet" href="css/main.css">
+	<link type="text/css" href="css/landingbg.css">
+
+	<style>
+		.bg-img {
+			background-repeat: no-repeat;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			background-position: center center;
+		}
+	</style>
 	
 </head>
 
@@ -65,8 +76,8 @@
 			<div class="container" style="height: 100vh; display: flex; justify-content: center; align-items: center;">
 				<div class="row ">
 					<div class="col-lg-6 col-md-12 col-sm-12 p-5 bg-img rounded"
-						style="background-image: url(images/landing2.jpeg);max-width: 600px; max-height: 500px; z-index:999">
-						<div style="height: 100%; display: flex; flex-direction: column; align-items: center;">
+						style="background-image: url(images/landing2.jpeg); max-width: 600px; min-height: 450px; z-index:999; display: flex; justify-content: center; align-items: center !important;">
+						<div style="height: 100%;">
 							<h3 style="text-align:justify; color: black;">Welcome to Entrepreneurship
 								Development Cell
 								of TIET. EDC is a collaborative independent body which fosters and nurtures the
@@ -80,7 +91,7 @@
 						</div>
 					</div>
 					<div class="col-lg-6 col-md-12 col-sm-12 p-0 rounded-2 disp-none">
-						<img src="images/landing1.jpeg" style="max-width: 600px; max-height: 500px; margin-right: 125px;  border-radius: 4px !important;" />
+						<img src="images/landing1.jpeg" style="max-width: 600px; max-height: 450px;" class="bg-img"/>
 					</div>
 				</div>
 			</div>
