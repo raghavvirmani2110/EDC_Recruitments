@@ -5,24 +5,24 @@
 	<meta charset="utf-8">
 
 	<title>EDC - TIET</title>
-	
+
 	<link rel="stylesheet" type="text/css" href="css/preloader.css" />
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+
 	<!-- bootstrap -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/card.css">
-	
+
 	<!-- google font -->
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
-	
+
 	<link rel="stylesheet" href="css/jquery.fullPage.css">
 	<link rel="stylesheet" href="css/templatemo-style.css">
-	
+
 	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css'>
 	<link rel="stylesheet" href="css/main.css">
 	<link type="text/css" href="css/landingbg.css">
@@ -37,7 +37,9 @@
 			background-position: center center;
 		}
 	</style>
-	
+	<script>
+		window.addEventListener("load", function() { window. scrollTo(0, 0); });
+	</script>
 </head>
 
 <body data-pinterest-extension-installed="cr1.3.4" cz-shortcut-listen="true" style="background-color: #000000;">
@@ -45,38 +47,38 @@
 	<!--- Pre-Loader starts-->
 	<div id="loader-wrapper">
 		<div id="loader"></div>
-	 
+
 		<div class="loader-section section-left"></div>
 		<div class="loader-section section-right"></div>
-	 
+
 	</div>
 
-	
+
 	<!-- BG Design starts -->
 	<div id="large-header" class="large-header" style="position: absolute;">
 		<canvas id="demo-canvas"></canvas>
 	</div>
-	
+
 
 	<!-- Logo -->
 	<div class="fixedlogos">
 		<img class="logo" src="images/logo.PNG">
 	</div>
-	
+
 	<div class="logo_less">
 		<center style>
 			<img class="logo1" height="65px" src="images/edc_logo.png">
 		</center>
 	</div>
-	
-	
+
+
 	<div class="fullpage">
-	<center>			
+	<center>
 		<div id="Landing" class="section">
-			<div class="container" style="height: 100vh; display: flex; justify-content: center; align-items: center;">
+			<div style="height: 100vh; display: flex; justify-content: center; align-items: center;">
 				<div class="row ">
 					<div class="col-lg-6 col-md-12 col-sm-12 p-5 bg-img rounded"
-						style="background-image: url(images/landing2.jpeg); max-width: 600px; min-height: 450px; z-index:999; display: flex; justify-content: center; align-items: center !important;">
+						style="background-image: url(images/landing2.jpeg); max-width: 600px; min-height: 450px; z-index:999; display: flex;justify-content: center; align-items: center !important;">
 						<div style="height: 100%;">
 							<h3 style="text-align:justify; color: black;">Welcome to Entrepreneurship
 								Development Cell
@@ -96,7 +98,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 
 		<form action="server.php" method="post">
 			<div id="Q1" class="section ">
@@ -142,7 +144,7 @@
 					<div class="card cardanimation">
 						<div>
 							<h2 style="color: white;">Phone Number</h2>
-							<input type="text" class="input" maxlength=10 name="phone" required>
+							<input type="number" class="input" maxlength=10 name="phone" pattern="[0-9]*" required>
 							<div class="button_manage">
 								<a class="btn btn-primary more" href="#Q2">
 									<div>Prev</div>
@@ -165,7 +167,7 @@
 					<div class="card cardanimation">
 						<div>
 							<h2 style="color: white;">Roll Number</h2>
-							<input type="text" class="input" name="roll" required>
+							<input type="number" class="input" name="roll" pattern="[0-9]*" required>
 							<div class="button_manage">
 								<a class="btn btn-primary more" href="#Q3">
 									<div>Prev</div>
@@ -264,7 +266,7 @@
 				<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
 					<div class="card cardanimation">
 						<div>
-							<h2 class="mb-5" style="color: black; margin: 7px !important;">What is/are your preferred
+							<h2 class="mb-5" style="color: white; margin: 7px !important;">What is/are your preferred
 								Department/s?</h2>
 							<div class="">
 								<ul class="list">
@@ -420,21 +422,16 @@
 				</div>
 			</div>
 		</form>
-		
+
 
 </center>
 	</div>
 
 	<script src="js/jquery.js"></script>
 	<script src="js/firstbg.js"></script>
-	<script src="js/jquery.fullPage.js"></script>	
+	<script src="js/jquery.fullPage.js"></script>
 	<script src="js/custom.js"></script>
-	<script>
-		input.onfocus = function() {
-			this.blur();
-			this.focus();
-		}
-	</script>
+
 </body>
 
 </html>
