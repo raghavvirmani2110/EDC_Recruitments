@@ -105,7 +105,7 @@
 				<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
 					<div class="card cardanimation">
 						<div>
-							<h2 style="color: white;">Enter your name</h2>
+							<h2 style="color: white;">What is your good name?</h2>
 							<input type="text" class="input" name="name" required>
 							<div class="button_manage">
 								<a class="btn btn-primary more" href="#Q2">
@@ -117,12 +117,13 @@
 					</div>
 				</div>
 			</div>
+
 			<div id="Q2" class="section">
 				<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
 					<div class="card cardanimation">
 						<div>
-							<h2 style="color: white;">E-mail ID</h2>
-							<input type="email" class="input" name="email" required>
+							<h2 style="color: white;">Your roll number /TIET application number</h2>
+							<input type="number" class="input" name="roll" pattern="[0-9]*" required>
 							<div class="button_manage">
 								<a class="btn btn-primary more" href="#Q1">
 									<div>Prev</div>
@@ -135,7 +136,6 @@
 							</div>
 						</div>
 					</div>
-
 				</div>
 			</div>
 
@@ -143,8 +143,8 @@
 				<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
 					<div class="card cardanimation">
 						<div>
-							<h2 style="color: white;">Phone Number</h2>
-							<input type="number" class="input" maxlength=10 name="phone" pattern="[0-9]*" required>
+							<h2 style="color: white;">Your email</h2>
+							<input type="email" class="input" name="email" required>
 							<div class="button_manage">
 								<a class="btn btn-primary more" href="#Q2">
 									<div>Prev</div>
@@ -155,7 +155,6 @@
 									<div><img src="images/next.png"></div>
 								</a>
 							</div>
-
 						</div>
 					</div>
 
@@ -166,8 +165,8 @@
 				<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
 					<div class="card cardanimation">
 						<div>
-							<h2 style="color: white;">Roll Number</h2>
-							<input type="number" class="input" name="roll" pattern="[0-9]*" required>
+							<h2 style="color: white;">Your WhatsApp number</h2>
+							<input type="number" class="input" maxlength=10 name="phone" pattern="[0-9]*" required>
 							<div class="button_manage">
 								<a class="btn btn-primary more" href="#Q3">
 									<div>Prev</div>
@@ -178,28 +177,20 @@
 									<div><img src="images/next.png"></div>
 								</a>
 							</div>
+
 						</div>
 					</div>
+
 				</div>
 			</div>
 
+			
 			<div id="Q5" class="section">
 				<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
 					<div class="card cardanimation">
 						<div>
-							<h2 class="mb-5" style="color: white;">You are a ___________</h2>
-							<p>
-								<label>
-									<input class="with-gap" name="live" type="radio" value="day scholar " required />
-									<span style="color: #ffffff;">Day Scholar</span>
-								</label>
-							</p>
-							<p>
-								<label>
-									<input class="with-gap" name="live" type="radio" value="hostler" required />
-									<span style="color: #ffffff;">Hosteller</span>
-								</label>
-							</p>
+							<h2 class="textStyle">Why do you want to join EDC?</h2>
+							<textarea class="input" rows="5" name="join" required></textarea>
 							<div class="button_manage">
 								<a class="btn btn-primary more" href="#Q4">
 									<div>Prev</div>
@@ -216,12 +207,13 @@
 				</div>
 			</div>
 
-			<div id="Q6" class="section">
+			<div id="Q6" class="section ">
 				<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
 					<div class="card cardanimation">
 						<div>
-							<h2 class="textStyle">Why do you want to join EDC?</h2>
-							<textarea class="input" rows="5" name="join" required></textarea>
+
+							<h2 style="color: white; font-size: 16">If you could repeat words said by only one person, who would you want to be echoing?</h2>
+							<textarea class="input" rows="2" name="echo_name" required></textarea>
 							<div class="button_manage">
 								<a class="btn btn-primary more" href="#Q5">
 									<div>Prev</div>
@@ -238,14 +230,13 @@
 				</div>
 			</div>
 
-			<div id="Q7" class="section ">
+			
+			<div id="Q7" class="section">
 				<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
 					<div class="card cardanimation">
 						<div>
-
-							<h2 style="color: white; font-size: 16"> What other societies are
-								you a part of?</h2>
-							<textarea class="input" rows="1" name="socities" required></textarea>
+							<h2 class="textStyle">Do you believe it’s more important to work fast or get the job done right?</h2>
+							<textarea class="input" rows="5" name="job" required></textarea>
 							<div class="button_manage">
 								<a class="btn btn-primary more" href="#Q6">
 									<div>Prev</div>
@@ -256,7 +247,6 @@
 									<div><img src="images/next.png"></div>
 								</a>
 							</div>
-
 						</div>
 					</div>
 				</div>
@@ -266,54 +256,8 @@
 				<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
 					<div class="card cardanimation">
 						<div>
-							<h2 class="mb-5" style="color: white; margin: 7px !important;">What is/are your preferred
-								Department/s?</h2>
-							<div class="">
-								<ul class="list">
-									<li class="list__item">
-										<div class="label--checkbox">
-											<input type="checkbox" class="" id="t-dept">
-											<label for="t-dept" style="color:white" class="department">Web Development</label>
-										</div>
-									</li>
-									<li class="list__item">
-										<label class="label--checkbox">
-											<input type="checkbox" class="" id="m-dept">
-											<label for="m-dept" style="color:white" class="department">Marketing</label>
-										</label>
-									</li>
-									<li class="list__item">
-										<label class="label--checkbox">
-											<input type="checkbox" class="" id="v-dept">
-											<label for="v-dept" style="color:white" class="department">Video Editing</label>
-										</label>
-									</li>
-									<li class="list__item">
-										<label class="label--checkbox">
-											<input type="checkbox" class="" id="g-dept">
-											<label for="g-dept" style="color:white" class="department">Graphic Designing</label>
-										</label>
-									</li>
-									<li class="list__item">
-										<label class="label--checkbox">
-											<input type="checkbox" class="" id="e-dept">
-											<label for="e-dept" style="color:white" class="department">Event Management</label>
-										</label>
-									</li>
-									<li class="list__item">
-										<label class="label--checkbox">
-											<input type="checkbox" class="" id="c-dept">
-											<label for="c-dept" style="color:white" class="department">Content Writing</label>
-										</label>
-									</li>
-									<li class="list__item">
-										<label class="label--checkbox">
-											<input type="checkbox" class="" id="ex-dept">
-											<label for="ex-dept" style="color:white" class="department">Externals</label>
-										</label>
-									</li>
-								</ul>
-							</div>
+							<h2 class="textStyle">According to you, what is the greatest innovation of humanity?</h2>
+							<textarea class="input" rows="5" name="innovation" required></textarea>
 							<div class="button_manage">
 								<a class="btn btn-primary more" href="#Q7">
 									<div>Prev</div>
@@ -323,92 +267,22 @@
 									<div>Next</div>
 									<div><img src="images/next.png"></div>
 								</a>
-
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+
+
 			<div id="Q9" class="section">
 				<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
 					<div class="card cardanimation">
 						<div>
-							<h2 class="textStyle">Any prior experience in the department
-								that you have chosen?</h2>
-							<textarea class="input" rows="5" name="experience" required></textarea>
+							<h2 class="textStyle">How deep would be an ocean if sponges didn't live there?
+							</h2>
+							<textarea class="input" rows="5" name="ocean" required></textarea>
 							<div class="button_manage">
 								<a class="btn btn-primary more" href="#Q8">
-									<div>Prev</div>
-									<div><img src="images/prev.png"></div>
-								</a>
-								<a class="btn btn-primary more" href="#Q10">
-									<div>Next</div>
-									<div><img src="images/next.png"></div>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div id="Q10" class="section">
-				<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
-					<div class="card cardanimation">
-						<div>
-							<h2 class="textStyle">If killing
-								people is wrong, then why do
-								we kill people that kill
-								people?</h2>
-							<textarea class="input" rows="5" name="kill" required></textarea>
-							<div class="button_manage">
-								<a class="btn btn-primary more" href="#Q9">
-									<div>Prev</div>
-									<div><img src="images/prev.png"></div>
-								</a>
-								<a class="btn btn-primary more" href="#Q11">
-									<div>Next</div>
-									<div><img src="images/next.png"></div>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-
-			<div id="Q11" class="section">
-				<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
-					<div class="card cardanimation">
-						<div>
-							<h2 class="textStyle">What advice would
-								you give to your 8-year old self?
-							</h2>
-							<textarea class="input" rows="5" name="advice" required></textarea>
-							<div class="button_manage">
-								<a class="btn btn-primary more" href="#Q10">
-									<div>Prev</div>
-									<div><img src="images/prev.png"></div>
-								</a>
-								<a class="btn btn-primary more" href="#Q12">
-									<div>Next</div>
-									<div><img src="images/next.png"></div>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div id="Q12" class="section">
-				<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
-					<div class="card cardanimation">
-						<div>
-							<h2 class="textStyle">In the word
-								"scent" is it the "s" or the "c"
-								that is silent? And why do you think
-								so ?</h2>
-							<textarea class="input" rows="5" name="scent" required></textarea>
-							<div class="button_manage">
-								<a class="btn btn-primary more" href="#Q11">
 									<div>Prev</div>
 									<div><img src="images/prev.png"></div>
 								</a>
@@ -421,6 +295,7 @@
 					</div>
 				</div>
 			</div>
+			
 		</form>
 
 
